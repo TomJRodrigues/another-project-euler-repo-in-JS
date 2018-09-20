@@ -29,4 +29,4 @@ for (i = 0; i < 101; i++) {
 squareOfSum = square(sum);
 console.log("squareOfSum now equals: " + squareOfSum);
 difference = squareOfSum - sumOfSquares;
-console.log("the differnce between them is: " + difference);
+console.log("the difference between them is: " + difference);
