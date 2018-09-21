@@ -6,18 +6,15 @@ var i = 13;
 var j = 0;
 var primes = [2, 3, 5, 7, 11, 13];
 
-for (i = 15; i < 100; i = i + 2) {
+for (i = 15; i < 105000; i = i + 2) {
     for (j = primes.length; j > -1; j--) {
         if (i % primes[j] === 0) {
-            i = i + 2;
-        }
-        else {
-            j--;
+            break;
         }
         if (j === 0) {
             primes.push(i);
-            console.log(primes);
         }
     }
 }
 console.log(primes);
+console.log(primes[10000]);
